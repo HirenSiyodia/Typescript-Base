@@ -1,6 +1,8 @@
 
 import './App.css';
 import Home from './Home';
+import LogIn from './LogIn';
+import LogLevel from './LogLevel';
 import PersonDetails from './PersonDetails';
 import TeamArray from './TeamArray';
 import TeamArrayObject from './TeamArrayObject';
@@ -32,10 +34,12 @@ function App() {
 
   return (
     <>
-       <Home name='Hiren' age={28} isEligible={true}/>
+       <Home name='Hiren' isEligible={true}/>
        <PersonDetails Details={Details}/>
        <TeamArray Team={Team}/>
        <TeamArrayObject Players={Players}/>
+       <LogLevel status='Info'/>
+      <LogIn/>
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 interface detailProps {
   name:string,
-  age:number,
+  age?:number, //Here age is optional as we didn't pass it in App.tsx and it will not give any error
   isEligible: boolean
 }
 
