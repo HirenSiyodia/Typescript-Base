@@ -1,9 +1,11 @@
 
 import './App.css';
+import CountReducer from './CountReducer';
 import Home from './Home';
 import LogIn from './LogIn';
 import LogLevel from './LogLevel';
 import PersonDetails from './PersonDetails';
+import SignUp from './SignUp';
 import TeamArray from './TeamArray';
 import TeamArrayObject from './TeamArrayObject';
 
@@ -40,6 +42,8 @@ function App() {
        <TeamArrayObject Players={Players}/>
        <LogLevel status='Info'/>
       <LogIn/>
+      <SignUp/>
+      <CountReducer/>
     </>
   );
 }
