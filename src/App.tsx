@@ -1,25 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './Home';
+import PersonDetails from './PersonDetails';
+import TeamArray from './TeamArray';
+import TeamArrayObject from './TeamArrayObject';
 
 function App() {
+
+  const Details = {
+    Fname: 'Virat',
+    Lname: 'Kohli',
+    Age: 35
+  }
+
+  const Team = ['India', 'Australia', 'England', 'New Zealand', 'South Africa']
+
+  const Players = [ {
+  Name: 'Virat Kohli',
+  Age: 35,
+  Team: 'India', 
+  },
+  {
+    Name: 'Steve Smith',
+    Age: 33,
+    Team: 'Australia'
+  }, {
+    Name: 'Joe Root',
+    Age: 31,
+    Team: 'England'
+  }]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <Home name='Hiren' age={28} isEligible={true}/>
+       <PersonDetails Details={Details}/>
+       <TeamArray Team={Team}/>
+       <TeamArrayObject Players={Players}/>
+    </>
   );
 }
 
