@@ -28,6 +28,7 @@ const CountReducer = () => {
     const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <div>
+        {state.count}
       <button onClick={()=> dispatch({type:"Increment"})}>Increment</button>
        <button onClick={()=> dispatch({type:"Decrement"})}>Decrement</button>
     </div>
