@@ -1,5 +1,6 @@
 
 import './App.css';
+import Content from './Context/Content';
 import CountReducer from './CountReducer';
 import Home from './Home';
 import LogIn from './LogIn';
@@ -44,6 +45,7 @@ function App() {
       <LogIn/>
       <SignUp/>
       <CountReducer/>
+      <Content/>
     </>
   );
 }
